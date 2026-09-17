@@ -5,55 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Đánh giá K</title>
 
-<!-- Các thẻ giúp iOS nhận app khi Add to Home Screen -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Đánh giá K">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#14213d">
 
-<!-- Icon lấy từ Google Drive -->
 <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1fHQh9ZPBx6K63LK2mxY9kXsdXqzkesIU">
 <link rel="icon" href="https://lh3.googleusercontent.com/d/1fHQh9ZPBx6K63LK2mxY9kXsdXqzkesIU">
 
 <style>
-  body{
+  html,body{
     margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    padding:0;
+    height:100%;
+    overflow:hidden;
     background:#14213d;
-    color:#fff;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
   }
-  .box{padding:20px;}
-  .spin{
-    width:34px;height:34px;
-    border:3px solid rgba(255,255,255,.25);
-    border-top-color:#fff;
-    border-radius:50%;
-    animation:sp .8s linear infinite;
-    margin:0 auto 14px;
+  iframe{
+    border:none;
+    width:100%;
+    height:100%;
+    display:block;
   }
-  @keyframes sp{to{transform:rotate(360deg);}}
-  p{font-size:14px;opacity:.85;margin:0;}
 </style>
-
-<!-- Tự động chuyển hướng sang web app GAS ngay khi trang vừa mở -->
-<script>
-  window.location.replace("https://script.google.com/macros/s/AKfycbyIG_xvjMUFA3nWC_hSEdj0jgcJinrNnEcMAFHRJH5IZpHtU6JQ6d39lqtmZgHkVyZZ/exec");
-</script>
 </head>
 <body>
-  <div class="box">
-    <div class="spin"></div>
-    <p>Đang mở ứng dụng…</p>
-  </div>
-  <!-- Phòng khi JS bị chặn, vẫn có link để bấm thủ công -->
+  <iframe src="https://script.google.com/macros/s/AKfycbyIG_xvjMUFA3nWC_hSEdj0jgcJinrNnEcMAFHRJH5IZpHtU6JQ6d39lqtmZgHkVyZZ/exec" allow="fullscreen"></iframe>
+
   <noscript>
-    <p><a style="color:#fff" href="https://script.google.com/macros/s/AKfycbyIG_xvjMUFA3nWC_hSEdj0jgcJinrNnEcMAFHRJH5IZpHtU6JQ6d39lqtmZgHkVyZZ/exec">Bấm vào đây để mở ứng dụng</a></p>
+    <p style="color:#fff;text-align:center;padding-top:40px;font-family:sans-serif">
+      <a style="color:#fff" href="https://script.google.com/macros/s/AKfycbyIG_xvjMUFA3nWC_hSEdj0jgcJinrNnEcMAFHRJH5IZpHtU6JQ6d39lqtmZgHkVyZZ/exec">Bấm vào đây để mở ứng dụng</a>
+    </p>
   </noscript>
 </body>
 </html>
