@@ -9,10 +9,10 @@
 <meta name="apple-mobile-web-app-title" content="Đánh giá K">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#14213d">
+<meta name="theme-color" content="#c8102e">
 
-<link rel="apple-touch-icon" href="icon.png">
-<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon1.png">
+<link rel="icon" href="icon1.png">
 
 <style>
   html,body{
@@ -20,14 +20,12 @@
     padding:0;
     height:100%;
     overflow:hidden;
-    background:#14213d; /* đồng bộ với màu header của app thật, tránh lệch màu */
+    background:#14213d;
   }
   iframe{
-    position:fixed;
-    inset:0;
     border:none;
     width:100%;
-    height:100dvh; /* dvh thay vì % để tính đúng vùng an toàn trên iPhone */
+    height:100%;
     display:block;
   }
   #loader{
@@ -59,7 +57,7 @@
 </head>
 <body>
   <div id="loader">
-    <img src="icon.png" alt="Đánh giá K">
+    <img src="icon1.png" alt="Đánh giá K">
     <div class="spin"></div>
   </div>
 
@@ -73,8 +71,6 @@
 
   <script>
     var l = document.getElementById('loader');
-    // Chỉ che trong thời gian rất ngắn để tránh nháy màu ban đầu,
-    // sau đó để app tự hiện dần ra như bình thường thay vì chờ tải xong hẳn
     setTimeout(function(){ l.classList.add('hide'); }, 500);
   </script>
 </body>
